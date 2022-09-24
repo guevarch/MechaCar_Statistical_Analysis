@@ -45,3 +45,27 @@ df2 <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
 total_summary <- df2 %>% summarize(median=median(PSI), mean=mean(PSI), sd=sd(PSI), variance=var(PSI))
 lot_summary <- df2 %>% group_by(Manufacturing_Lot) %>% summarize(median=median(PSI), mean=mean(PSI), sd=sd(PSI), variance=var(PSI))
 
+
+## Deliverable 3
+
+
+## Test LOT 1
+subsetlot1 = subset(df2, Manufacturing_Lot = "Lot1")
+sample_table <- subsetlot1 %>% sample_n(75) #generate 50 randomly sampled data points
+sample_table2 <- subsetlot1 %>% sample_n(75) #generate another 50 randomly sampled data points
+t.test(log10(sample_table$PSI),log10(sample_table2$PSI)) #compare means of two samples
+
+## Test Lot 2
+subsetlot2 = subset(df2, Manufacturing_Lot = "Lot2")
+sample_table <- subsetlot2 %>% sample_n(75) #generate 50 randomly sampled data points
+sample_table2 <- subsetlot2 %>% sample_n(75) #generate another 50 randomly sampled data points
+t.test(log10(sample_table$PSI),log10(sample_table2$PSI)) #compare means of two sam
+
+## Test Lot 3
+subsetlot3 = subset(df2, Manufacturing_Lot = "Lot3")
+sample_table <- subsetlot3 %>% sample_n(75) #generate 50 randomly sampled data points
+sample_table2 <- subsetlot3 %>% sample_n(75) #generate another 50 randomly sampled data points
+t.test(log10(sample_table$PSI),log10(sample_table2$PSI)) #compare means of two sam
+
+
+
