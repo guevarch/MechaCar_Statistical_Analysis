@@ -1,8 +1,8 @@
 # MechaCar_Statistical_Analysis
 
-#Overview
+# Overview
 
-#Deliverable 1
+# Deliverable 1
 
 Linear Regression
 
@@ -41,7 +41,7 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
 #Deliverable 2
 
-#Deliverable 3
+#Deliverable 3 - ## T-Tests on Suspension Coils
 
 Test 1
 
