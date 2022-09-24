@@ -4,6 +4,6 @@ lm(vehicle_length ~vehicle_weight+spoiler_angle+ground_clearance+AWD+mpg, data=d
 summary(lm(vehicle_length ~vehicle_weight+spoiler_angle+ground_clearance+AWD+mpg, data=df1)) #summarize linear model
 df2 <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
 total_summary <- df2 %>% summarize(median=median(PSI), mean=mean(PSI), sd=sd(PSI), variance=var(PSI))
-
+lot_summary <- df2 %>% group_by(Manufacturing_Lot) %>% summarize(median=median(PSI), mean=mean(PSI), sd=sd(PSI), variance=var(PSI))
 
 
