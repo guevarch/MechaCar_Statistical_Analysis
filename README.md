@@ -43,32 +43,62 @@
 
 # Deliverable 3 - ## T-Tests on Suspension Coils
 
+# Welch Two Sample t-test
  - Test 1
-	data:  log10(sample_table$PSI) and log10(sample_table2$PSI)
-	t = -0.62759, df = 147.71, p-value = 0.5312
+	data:  (sample_table$PSI) and (sample_table2$PSI)
+	t = 0, df = 298, p-value = 1
 	alternative hypothesis: true difference in means is not equal to 0
 	95 percent confidence interval:
-	 -0.0010390685  0.0005381693
+	 -1.793521  1.793521
 	sample estimates:
 	mean of x mean of y 
-	  3.17566   3.17591
+	  1498.78   1498.78 
 
  - Test 2
-	data:  log10(sample_table$PSI) and log10(sample_table2$PSI)
-	t = 0.038021, df = 147.84, p-value = 0.9697
+	data:  (sample_table$PSI) and (sample_table2$PSI)
+	t = 0, df = 298, p-value = 1
 	alternative hypothesis: true difference in means is not equal to 0
 	95 percent confidence interval:
-	 -0.0006049680  0.0006287042
+	 -1.793521  1.793521
 	sample estimates:
 	mean of x mean of y 
-	 3.175832  3.175821 
+	  1498.78   1498.78 
 
  - Test 3
-	data:  log10(sample_table$PSI) and log10(sample_table2$PSI)
-	t = 0.11231, df = 147.99, p-value = 0.9107
+	data:  (sample_table$PSI) and (sample_table2$PSI)
+	t = 0, df = 298, p-value = 1
 	alternative hypothesis: true difference in means is not equal to 0
 	95 percent confidence interval:
-	 -0.0008958496  0.0010038147
+	 -1.793521  1.793521
 	sample estimates:
 	mean of x mean of y 
-	 3.175649  3.175595
+	  1498.78   1498.78
+# One Sample t-test
+
+- Test 1
+	data:  subset(df2, Manufacturing_Lot == "Lot1")$PSI
+	t = 0, df = 49, p-value = 1
+	alternative hypothesis: true mean is not equal to 1500
+	95 percent confidence interval:
+	 1499.719 1500.281
+	sample estimates:
+	mean of x 1500
+	
+- Test 2
+
+	data:  subset(df2, Manufacturing_Lot == "Lot2")$PSI
+	t = 0.51745, df = 49, p-value = 0.6072
+	alternative hypothesis: true mean is not equal to 1500
+	95 percent confidence interval:
+	 1499.423 1500.977
+	sample estimates:
+	mean of x 1500.
+	
+- Test 3
+	data:  subset(df2, Manufacturing_Lot == "Lot3")$PSI
+	t = -2.0916, df = 49, p-value = 0.04168
+	alternative hypothesis: true mean is not equal to 1500
+	95 percent confidence interval:
+	 1492.431 1499.849
+	sample estimates:
+	mean of x 1496.14 
