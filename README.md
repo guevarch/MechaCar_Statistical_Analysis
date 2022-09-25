@@ -46,7 +46,8 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 ## Summary Statistics on Suspension Coils
 
 ![image](https://user-images.githubusercontent.com/107594143/192124585-cdc1feef-4af5-4a31-a192-3e7f7cdb05be.png)
-![image](https://user-images.githubusercontent.com/107594143/192124597-e3c7b7e4-001a-4436-af73-0c10c24f3d38.png)
+![image](https://user-images.githubusercontent.com/107594143/192124612-64c84428-185d-4b80-a665-d45575bfaf55.png)
+
 
 
 
