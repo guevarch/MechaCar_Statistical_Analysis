@@ -42,11 +42,19 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	Residual standard error: 8.774 on 44 degrees of freedom
 	Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 	F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11**
+	
+## Other images for correlation
+![image](https://user-images.githubusercontent.com/107594143/192124660-3ce7f13c-afeb-47c5-9869-a4d1ec0fc97c.png)
+![image](https://user-images.githubusercontent.com/107594143/192124724-81f52545-e0da-4951-b364-a916428760ca.png)
+![image](https://user-images.githubusercontent.com/107594143/192124734-a2298851-9464-4ea1-8ba6-2d31d51b18c1.png)
+![image](https://user-images.githubusercontent.com/107594143/192124769-43d2e6a8-58a6-4105-bc07-5a9954bd8733.png)
+
 
 ## Summary Statistics on Suspension Coils
 
 ![image](https://user-images.githubusercontent.com/107594143/192124585-cdc1feef-4af5-4a31-a192-3e7f7cdb05be.png)
 ![image](https://user-images.githubusercontent.com/107594143/192124612-64c84428-185d-4b80-a665-d45575bfaf55.png)
+
 
 
 
