@@ -41,7 +41,7 @@
 
 # Deliverable 2
 
-# Deliverable 3 - ## T-Tests on Suspension Coils
+# T-Tests on Suspension Coils
 
 # Welch Two Sample t-test
  - Test 1
