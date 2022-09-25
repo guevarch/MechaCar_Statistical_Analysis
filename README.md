@@ -2,7 +2,7 @@
 
 # Overview
 
-# Deliverable 1
+## Deliverable 1
 
 - Questions: Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 Is the slope of the linear model considered to be zero? Why or why not?
@@ -43,11 +43,11 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 	F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11**
 
-# Deliverable 2
+## Summary Statistics on Suspension Coils
 
-# T-Tests on Suspension Coils
+## T-Tests on Suspension Coils
 
-# Welch Two Sample t-test
+### Welch Two Sample t-test
  - Test 1
 	data:  (sample_table$PSI) and (sample_table2$PSI)
 	t = 0, df = 298, p-value = 1
@@ -77,7 +77,7 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	sample estimates:
 	mean of x mean of y 
 	  1498.78   1498.78
-# One Sample t-test
+### One Sample t-test
 
 - Test 1
 	data:  subset(df2, Manufacturing_Lot == "Lot1")$PSI
@@ -107,4 +107,4 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	sample estimates:
 	mean of x 1496.14
 
-# Deliverable 4
+## Deliverable 4
