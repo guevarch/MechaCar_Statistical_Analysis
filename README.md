@@ -4,6 +4,10 @@
 
 # Deliverable 1
 
+- Questions: Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+Is the slope of the linear model considered to be zero? Why or why not?
+Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+
  - Linear Regression
 
  	- Call:
@@ -101,4 +105,6 @@
 	95 percent confidence interval:
 	 1492.431 1499.849
 	sample estimates:
-	mean of x 1496.14 
+	mean of x 1496.14
+
+# Deliverable 4
