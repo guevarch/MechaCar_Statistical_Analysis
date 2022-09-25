@@ -122,3 +122,5 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	mean of x 1496.14
 
 ## Study Design: MechaCar vs Competition
+
+- A key metric that would be of interest to the consumer is city and highway fuel efficiency. The main unit of measurement to test is liters per 100 km.
