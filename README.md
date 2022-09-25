@@ -121,4 +121,4 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	sample estimates:
 	mean of x 1496.14
 
-## Deliverable 4
+## Study Design: MechaCar vs Competition
