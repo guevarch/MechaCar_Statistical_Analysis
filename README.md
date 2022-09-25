@@ -123,4 +123,4 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 
 ## Study Design: MechaCar vs Competition
 
-- A key metric that would be of interest to the consumer is the relationship of maintenance cost and the MSRP cost of the vehicle. The metrics we can test is the original MSRP, the value of the car after year 1 to 5, and the cost of maintenance from year 1 to 5. The null hypothesis is there is no relationship between cost of vehicle and cost of maintenance. The alternative hypothesis is there is a strong relationship between vehicle cost and the cost of maintenance.
+- A key metric that would be of interest to the consumer is the relationship of maintenance cost and the MSRP cost of the vehicle. The metrics we can test is the original MSRP and the average cost of maintenance from year 1 to 5. The null hypothesis is there is no relationship between cost of vehicle and cost of maintenance. The alternative hypothesis is there is a strong relationship between vehicle cost and the cost of maintenance.
