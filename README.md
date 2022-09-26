@@ -27,8 +27,8 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 
 
 	- Call:
-	lm(formula = mpg ~ vehicle_weight + spoiler_angle + ground_clearance + 
-	    AWD + vehicle_length, data = df1)
+	summary(lm(formula = mpg ~ vehicle_weight + spoiler_angle + ground_clearance + 
+	    AWD + vehicle_length, data = df1))
 
 	Residuals:
 	     Min       1Q   Median       3Q      Max 
