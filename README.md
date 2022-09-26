@@ -11,7 +11,7 @@ Is the slope of the linear model considered to be zero? Why or why not?
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 - Linear Regression Results
-- 
+- ---
 
  	Call:
 	lm(formula = mpg ~ vehicle_weight + spoiler_angle + ground_clearance + 
@@ -23,7 +23,7 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	
 
 - Summary Results
-- 
+- ---
 
 
 	- Call:
@@ -52,9 +52,6 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 ## Other images for correlation
 ![image](https://user-images.githubusercontent.com/107594143/192338167-c7c22b4d-eda5-47ea-a4cb-f577a0eb0c90.png) ![image](https://user-images.githubusercontent.com/107594143/192338393-d40e707e-742d-4704-aa12-72dceef98c3b.png)
 ![image](https://user-images.githubusercontent.com/107594143/192338513-052c5df2-4e06-495b-94cc-3f1784cd10e9.png) ![image](https://user-images.githubusercontent.com/107594143/192338587-c17f0d2a-b4ce-4964-8e01-10568d24053b.png)
-
-
-
 
 ## Summary Statistics on Suspension Coils
 
@@ -106,7 +103,6 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	mean of x 1500
 	
 - Test 2
-
 	data:  subset(df2, Manufacturing_Lot == "Lot2")$PSI
 	t = 0.51745, df = 49, p-value = 0.6072
 	alternative hypothesis: true mean is not equal to 1500
