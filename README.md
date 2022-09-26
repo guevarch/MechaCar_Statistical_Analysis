@@ -50,10 +50,10 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11**
 	
 ## Other images for correlation
-![image](https://user-images.githubusercontent.com/107594143/192124660-3ce7f13c-afeb-47c5-9869-a4d1ec0fc97c.png)
-![image](https://user-images.githubusercontent.com/107594143/192124724-81f52545-e0da-4951-b364-a916428760ca.png)
-![image](https://user-images.githubusercontent.com/107594143/192124734-a2298851-9464-4ea1-8ba6-2d31d51b18c1.png)
-![image](https://user-images.githubusercontent.com/107594143/192124769-43d2e6a8-58a6-4105-bc07-5a9954bd8733.png)
+![image](https://user-images.githubusercontent.com/107594143/192338167-c7c22b4d-eda5-47ea-a4cb-f577a0eb0c90.png) ![image](https://user-images.githubusercontent.com/107594143/192338393-d40e707e-742d-4704-aa12-72dceef98c3b.png)
+![image](https://user-images.githubusercontent.com/107594143/192338513-052c5df2-4e06-495b-94cc-3f1784cd10e9.png) ![image](https://user-images.githubusercontent.com/107594143/192338587-c17f0d2a-b4ce-4964-8e01-10568d24053b.png)
+
+
 
 
 ## Summary Statistics on Suspension Coils
