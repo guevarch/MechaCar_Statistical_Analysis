@@ -38,7 +38,7 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	ground_clearance  3.546e+00  5.412e-01   6.551 5.21e-08 ***
 	AWD              -3.411e+00  2.535e+00  -1.346   0.1852    
 	vehicle_length    6.267e+00  6.553e-01   9.563 2.60e-12 ***
-	---
+
 	Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 	Residual standard error: 8.774 on 44 degrees of freedom
@@ -56,9 +56,6 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 
 ![image](https://user-images.githubusercontent.com/107594143/192124585-cdc1feef-4af5-4a31-a192-3e7f7cdb05be.png)
 ![image](https://user-images.githubusercontent.com/107594143/192124612-64c84428-185d-4b80-a665-d45575bfaf55.png)
-
-
-
 
 
 ## T-Tests on Suspension Coils
