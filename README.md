@@ -10,17 +10,21 @@ The overview of this analysis is to perform multiple linear regression analysis 
 Is the slope of the linear model considered to be zero? Why or why not?
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
- - Linear Regression
+- Linear Regression Results
+- 
 
- 	- Call:
+ 	Call:
 	lm(formula = mpg ~ vehicle_weight + spoiler_angle + ground_clearance + 
 	    AWD + vehicle_length, data = df1)
 
 	Coefficients:
 	     (Intercept)    vehicle_weight     spoiler_angle  ground_clearance               AWD    vehicle_length  
 	      -1.040e+02         1.245e-03         6.877e-02         3.546e+00        -3.411e+00         6.267e+00 
+	
 
-- Summary 
+- Summary Results
+- 
+
 
 	- Call:
 	lm(formula = mpg ~ vehicle_weight + spoiler_angle + ground_clearance + 
