@@ -63,7 +63,7 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 
 ### Welch Two Sample t-test
  - Test 1
-	data:  (sample_table$PSI) and (sample_table2$PSI)
+	data:  (sample_tablelot1$PSI) and (sample_tablelot2$PSI)
 	t = 0, df = 298, p-value = 1
 	alternative hypothesis: true difference in means is not equal to 0
 	95 percent confidence interval:
@@ -73,7 +73,7 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	  1498.78   1498.78 
 
  - Test 2
-	data:  (sample_table$PSI) and (sample_table2$PSI)
+	data:  (sample_tablelot1$PSI) and (sample_tablelot3$PSI)
 	t = 0, df = 298, p-value = 1
 	alternative hypothesis: true difference in means is not equal to 0
 	95 percent confidence interval:
@@ -83,7 +83,7 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 	  1498.78   1498.78 
 
  - Test 3
-	data:  (sample_table$PSI) and (sample_table2$PSI)
+	data:  (sample_tablelot2$PSI) and (sample_tablelot3$PSI)
 	t = 0, df = 298, p-value = 1
 	alternative hypothesis: true difference in means is not equal to 0
 	95 percent confidence interval:
