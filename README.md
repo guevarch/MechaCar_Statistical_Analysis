@@ -2,6 +2,8 @@
 
 # Overview
 
+The overview of this analysis is to perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes, collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots, run t-tests to determine if the manufacturing lots are statistically different from the mean population, and design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers.
+
 ## Deliverable 1
 
 - Questions: Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
