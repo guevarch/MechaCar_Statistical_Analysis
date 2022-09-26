@@ -12,33 +12,27 @@ library(ggplot2)
 ##vehicle weight
 model <- lm(vehicle_weight ~ mpg,df1) #create linear model
 yvals <- model$coefficients['mpg']*df1$mpg + model$coefficients['(Intercept)'] #determine y-axis values from linear model
-plt <- ggplot(df1,aes(x=mpg,y=vehicle_weight)) #import dataset into ggplot2
-plt + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear model
+pltvehicle_weight <- ggplot(df1,aes(x=mpg,y=vehicle_weight)) #import dataset into ggplot2
+pltvehicle_weight + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear model
 
 
 ##vehicle length
 model <- lm(vehicle_length ~ mpg,df1) #create linear model
 yvals <- model$coefficients['mpg']*df1$mpg + model$coefficients['(Intercept)'] #determine y-axis values from linear model
-plt <- ggplot(df1,aes(x=mpg,y=vehicle_length)) #import dataset into ggplot2
-plt + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear model
-
-##AWD
-model <- lm(AWD ~ mpg,df1) #create linear model
-yvals <- model$coefficients['mpg']*df1$mpg + model$coefficients['(Intercept)'] #determine y-axis values from linear model
-plt <- ggplot(df1,aes(x=mpg,y=AWD)) #import dataset into ggplot2
-plt + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear mode
+pltvehicle_length <- ggplot(df1,aes(x=mpg,y=vehicle_length)) #import dataset into ggplot2
+pltvehicle_length + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear model
 
 ##ground_clearance
 model <- lm(ground_clearance ~ mpg,df1) #create linear model
 yvals <- model$coefficients['mpg']*df1$mpg + model$coefficients['(Intercept)'] #determine y-axis values from linear model
-plt <- ggplot(df1,aes(x=mpg,y=ground_clearance)) #import dataset into ggplot2
-plt + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear mode
+pltground_clearance <- ggplot(df1,aes(x=mpg,y=ground_clearance)) #import dataset into ggplot2
+pltground_clearance + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear mode
 
 ##spoiler_angle
 model <- lm(spoiler_angle ~ mpg,df1) #create linear model
 yvals <- model$coefficients['mpg']*df1$mpg + model$coefficients['(Intercept)'] #determine y-axis values from linear model
-plt <- ggplot(df1,aes(x=mpg,y=spoiler_angle)) #import dataset into ggplot2
-plt + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear mode
+pltspoiler_angle <- ggplot(df1,aes(x=mpg,y=spoiler_angle)) #import dataset into ggplot2
+pltspoiler_angle + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear mode
 
 ## Deliverable 2
 df2 <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
@@ -48,25 +42,19 @@ lot_summary <- df2 %>% group_by(Manufacturing_Lot) %>% summarize(median=median(P
 
 ## Deliverable 3
 
-
-# Test LOT 1
+### Perform Welch Two Sample t-test
 subsetlot1 = subset(df2, Manufacturing_Lot = "Lot1")
-sample_table <- subsetlot1 %>% sample_n(150) #generate 50 randomly sampled data points
-sample_table2 <- subsetlot1 %>% sample_n(150) #generate another 50 randomly sampled data points
-t.test((sample_table$PSI),(sample_table2$PSI)) #compare means of two samples
-
-## Test Lot 2
 subsetlot2 = subset(df2, Manufacturing_Lot = "Lot2")
-sample_table <- subsetlot2 %>% sample_n(150) #generate 50 randomly sampled data points
-sample_table2 <- subsetlot2 %>% sample_n(150) #generate another 50 randomly sampled data points
-t.test((sample_table$PSI),(sample_table2$PSI)) #compare means of two samples
-
-## Test Lot 3
 subsetlot3 = subset(df2, Manufacturing_Lot = "Lot3")
-sample_table <- subsetlot3 %>% sample_n(150) #generate 50 randomly sampled data points
-sample_table2 <- subsetlot3 %>% sample_n(150) #generate another 50 randomly sampled data points
-t.test((sample_table$PSI),(sample_table2$PSI)) #compare means of two samples
-
+sample_tablelot1 <- subsetlot1 %>% sample_n(150)
+sample_tablelot2 <- subsetlot2 %>% sample_n(150)
+sample_tablelot3 <- subsetlot3 %>% sample_n(150)
+#1&2
+t.test((sample_tablelot1$PSI),(sample_tablelot2$PSI))
+#1&3
+t.test((sample_tablelot1$PSI),(sample_tablelot3$PSI))
+#2&3
+t.test((sample_tablelot2$PSI),(sample_tablelot3$PSI))
 
 ### Peform t-test on Lot 1
 t.test(subset(df2,Manufacturing_Lot=="Lot1")$PSI,mu = 1500)
@@ -76,3 +64,7 @@ t.test(subset(df2,Manufacturing_Lot=="Lot2")$PSI,mu = 1500)
 
 # Peform t-test on Lot 3
 t.test(subset(df2,Manufacturing_Lot=="Lot3")$PSI,mu = 1500)
+
+
+
+
