@@ -65,7 +65,7 @@ The model predicts it well for some metrics - particularly the ones with the hig
 ![image](https://user-images.githubusercontent.com/107594143/192338513-052c5df2-4e06-495b-94cc-3f1784cd10e9.png) ![image](https://user-images.githubusercontent.com/107594143/192338587-c17f0d2a-b4ce-4964-8e01-10568d24053b.png)
 
 ## Summary Statistics on Suspension Coils
-
+- All three lots have almost the same median and mean, but as we dig deeper into the data we can see difference standard deviationa and variance among the lots. The lot with the highest sd and var is lot three, which indicates that there are more varied psi vs the other lots. If we were to compare regression plots, the first two lots would have scatter plots closely hugging the regression line. For the third lot the plots would be looser, they would not hug the regression line so closely. 
 ![image](https://user-images.githubusercontent.com/107594143/192124585-cdc1feef-4af5-4a31-a192-3e7f7cdb05be.png)
 ![image](https://user-images.githubusercontent.com/107594143/192124612-64c84428-185d-4b80-a665-d45575bfaf55.png)
 
