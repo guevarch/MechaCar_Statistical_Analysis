@@ -7,8 +7,8 @@ The overview of this analysis is to perform multiple linear regression analysis 
 ## Deliverable 1
 
 - Questions: Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Is the slope of the linear model considered to be zero? Why or why not?
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+Is the slope of the linear model considered to be zero? Why or why not? Except for awd and spoiler vs mpg, the slopes are positive. 
+Does this linear model predict mpg of MechaCar prototypes effectively? Why the model predicts it well. The low p-value
 
 - Linear Regression Results
 - ---
@@ -122,10 +122,10 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 
 ## Study Design: MechaCar vs Competition
 
-- A key metric that would be of interest to the consumer is the relationship of maintenance cost and the MSRP cost of the vehicle. The metrics we can test is the original MSRP and the average cost of maintenance from year 1 to 5. The null hypothesis is there is no relationship between cost of vehicle and cost of maintenance. The alternative hypothesis is there is a strong relationship between vehicle cost and the cost of maintenance. First we can test for the normality using shapiro test. Then we can use either the One Sample t-test or the Welch Two Sample t-test to determine the p-value. Then we compare p-value to the significance level - A large p (> 0.05) means the alternate hypothesis is weak, so you do not reject the null, and A small p (≤ 0.05), reject the null hypothesis. This is strong evidence that the null hypothesis is invalid. Another guideline to consider is this:
+- A key metric that would be of interest to the consumer is the relationship of maintenance cost and the MSRP cost of the vehicle. The metrics we can test is the original MSRP and the average cost of maintenance from year 0 to 5. The null hypothesis is there is no relationship between cost of vehicle and cost of maintenance. The alternative hypothesis is there is a strong relationship between vehicle cost and the cost of maintenance. First we can test for the normality using shapiro test. Then we can use either the One Sample t-test or the Welch Two Sample t-test to determine the p-value. Then we compare p-value to the significance level - A large p (> 0.05) means the alternate hypothesis is weak, so you do not reject the null, and A small p (≤ 0.05), reject the null hypothesis. This is strong evidence that the null hypothesis is invalid. Another guideline to consider is this:
 						-	If p > .10 → “not significant”
 						-	If p ≤ .10 → “marginally significant”
 						-	If p ≤ .05 → “significant”
 						-	If p ≤ .01 → “highly significant.”
-The data needed for the test are cost of car from year 0 to year 5, including decpreciating, inflation adjusted prices, regular scheduled maintenance costs from year 0 to 5 - excluding any recalls. 
+The data needed for the test are cost of car from year 0 to year 5, including decpreciating, inflation adjusted prices, regular scheduled maintenance costs from year 0 to 5 - excluding any recalls. We can also use a correlation matrix to determine the r value for cost of vehicle and maintenance cost.
  
