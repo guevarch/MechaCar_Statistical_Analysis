@@ -6,6 +6,12 @@ df1 <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
 lm(mpg ~vehicle_weight+spoiler_angle+ground_clearance+AWD+vehicle_length, data=df1)
 summary(lm(mpg ~vehicle_weight+spoiler_angle+ground_clearance+AWD+vehicle_length, data=df1)) #summarize linear model
 
+cor(df1$mpg,df1$vehicle_weight) 
+cor(df1$mpg,df1$spoiler_angle)
+cor(df1$mpg,df1$ground_clearance)
+cor(df1$mpg,df1$vehicle_length)
+
+
 install.packages("ggplot2")
 library(ggplot2)
 
