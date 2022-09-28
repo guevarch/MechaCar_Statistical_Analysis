@@ -6,9 +6,7 @@ The overview of this analysis is to perform multiple linear regression analysis 
 
 ## Deliverable 1
 
-- Questions: Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Is the slope of the linear model considered to be zero? Why or why not? Except for awd and spoiler vs mpg, the slopes are positive. 
-Does this linear model predict mpg of MechaCar prototypes effectively? Why the model predicts it well. The low p-value
+The model predicts it well for some metrics - particularly the ones with the higher cor coeffecient and low p value. The low p-value suggests that we can state that there is sufficient evidence to reject our null hypothesis, which means that the slope of our linear model is not zero.
 
 - Linear Regression Results
 - ---
@@ -49,7 +47,20 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why the m
 	Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 	F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11**
 	
-## Other images for correlation
+- Correlation Results
+- These results show the correlation coefficients for the following columns except for AWD. Vehicle length and ground cleareance have the strongest correlation to mpg.
+- ---
+
+	> cor(df1$mpg,df1$vehicle_weight) 
+	[1] 0.09068314
+	> cor(df1$mpg,df1$spoiler_angle)
+	[1] -0.02083999
+	> cor(df1$mpg,df1$ground_clearance)
+	[1] 0.3287489
+	> cor(df1$mpg,df1$vehicle_length)
+	[1] 0.6094798
+	
+## Correlation Images
 ![image](https://user-images.githubusercontent.com/107594143/192338167-c7c22b4d-eda5-47ea-a4cb-f577a0eb0c90.png) ![image](https://user-images.githubusercontent.com/107594143/192338393-d40e707e-742d-4704-aa12-72dceef98c3b.png)
 ![image](https://user-images.githubusercontent.com/107594143/192338513-052c5df2-4e06-495b-94cc-3f1784cd10e9.png) ![image](https://user-images.githubusercontent.com/107594143/192338587-c17f0d2a-b4ce-4964-8e01-10568d24053b.png)
 
@@ -62,6 +73,7 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why the m
 ## T-Tests on Suspension Coils
 
 ### Welch Two Sample t-test
+I tried doing a Welch Two Sample t-test for the different lots but I got the same values for all of them. I'm unsure why this came about.
  - Test 1
 	data:  (sample_tablelot1$PSI) and (sample_tablelot2$PSI)
 	t = 0, df = 298, p-value = 1
@@ -92,7 +104,7 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why the m
 	mean of x mean of y 
 	  1498.78   1498.78
 ### One Sample t-test
-
+It is interesting to see that the data set with the largest variance has the lowest p-value.
 - Test 1
 	data:  subset(df2, Manufacturing_Lot == "Lot1")$PSI
 	t = 0, df = 49, p-value = 1
